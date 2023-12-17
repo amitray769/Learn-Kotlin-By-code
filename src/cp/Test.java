@@ -1,4 +1,4 @@
-package cp;
+package src.cp;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class Test {
 
     public static void main(String[] args) {
-        System.out.println(String.valueOf(10.566));
+        System.out.println(10.566);
 
         System.out.println(isPalindrome(121));
     }
