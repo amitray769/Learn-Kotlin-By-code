@@ -1,10 +1,10 @@
-package sealed_class
+package src.all_about_classes.sealed_class
 
 sealed class Result<out S, out F> {
     abstract fun <R> map(func: (S) -> R) : Result<R, F>
     abstract fun <R> mapFailure(func: (F) -> R) : Result<S, R>
     abstract fun get() : S?
-    data class Error<out S, out F>(val msg : String) : Result<S,F>() {
+    data class Error<out S, out F>(val msg : String) : Result<S, F>() {
         override fun <R> map(func: (S) -> R): Result<R, F> {
             TODO("Not yet implemented")
         }

@@ -1,4 +1,4 @@
-package enums
+package src.all_about_classes.enums
 
 fun main() {
 
